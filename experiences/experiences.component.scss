@@ -1,0 +1,9 @@
+.experience {
+  &-header {
+    opacity: 0.7;
+  }
+
+  &-content {
+    width: calc(100vw - 300px - 50px);
+  }
+}
