@@ -20,9 +20,8 @@ export const useWindowStore = create<AppWindowStore>()(
 				if (!win) return;
 
 				win.isOpen = true;
-				win.zIndex = state.nextZIndex;
+				win.zIndex = state.nextZIndex++;
 				win.data = data;
-				state.nextZIndex++;
 			}),
 
 		closeWindow: (windowKey) =>

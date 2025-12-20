@@ -1,5 +1,5 @@
 import { Dock, Navbar, Welcome } from "./components";
-import { TerminalWindow } from "./windows";
+import { Safari, Terminal } from "./windows";
 
 const App = () => {
 	return (
@@ -8,7 +8,8 @@ const App = () => {
 			<Welcome />
 			<Dock />
 
-			<TerminalWindow />
+			<Terminal />
+			<Safari />
 		</main>
 	);
 };

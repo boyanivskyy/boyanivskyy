@@ -3,7 +3,7 @@ import { techStack } from "../constants";
 import { WindowWrapper } from "../hoc";
 import { WindowControls } from "../components";
 
-const Terminal = () => {
+const TerminalWindow = () => {
 	return (
 		<>
 			<div id="window-header">
@@ -54,4 +54,4 @@ const Terminal = () => {
 	);
 };
 
-export const TerminalWindow = WindowWrapper(Terminal, "terminal");
+export const Terminal = WindowWrapper(TerminalWindow, "terminal");
