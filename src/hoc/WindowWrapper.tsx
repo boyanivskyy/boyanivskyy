@@ -9,10 +9,8 @@ import Draggable from "gsap/Draggable";
 // Register Draggable plugin once at module level
 gsap.registerPlugin(Draggable);
 
-export const WindowWrapper = <
-	P extends Record<string, never> = Record<string, never>
->(
-	Component: React.ComponentType<P>,
+export const WindowWrapper = (
+	Component: React.ComponentType,
 	windowKey: AppWindowKey
 ) => {
 	const Wrapped = (props: P) => {
