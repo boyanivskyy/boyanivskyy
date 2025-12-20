@@ -1,4 +1,5 @@
 import { Dock, Navbar, Welcome } from "./components";
+import { TerminalWindow } from "./windows";
 
 const App = () => {
 	return (
@@ -6,6 +7,8 @@ const App = () => {
 			<Navbar />
 			<Welcome />
 			<Dock />
+
+			<TerminalWindow />
 		</main>
 	);
 };
