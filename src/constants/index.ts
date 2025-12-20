@@ -35,7 +35,14 @@ const navIcons = [
 	},
 ];
 
-const dockApps = [
+export type DockApp = {
+	id: string;
+	name: string;
+	icon: string;
+	canOpen: boolean;
+};
+
+const dockApps: DockApp[] = [
 	{
 		id: "finder",
 		name: "Portfolio", // was "Finder"
