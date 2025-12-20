@@ -1,4 +1,4 @@
-import type { WINDOW_CONFIG } from "../constants";
+import { type navLinks, type WINDOW_CONFIG } from "../constants";
 
 export type AppWindow = {
 	isOpen: boolean;
@@ -6,7 +6,9 @@ export type AppWindow = {
 	data: unknown;
 };
 
-export type AppWindowKey = keyof typeof WINDOW_CONFIG;
+// FIXME: This is a workaround to get the keys of the navLinks array.
+export type navLinkKey = (typeof navLinks)[number]["type"];
+export type AppWindowKey = keyof typeof WINDOW_CONFIG & navLinkKey;
 
 export type AppWindowStore = {
 	windows: Record<AppWindowKey, AppWindow>;
