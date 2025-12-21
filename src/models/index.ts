@@ -1,4 +1,4 @@
-import { type navLinks, type WINDOW_CONFIG } from "../constants";
+import { locations, type navLinks, type WINDOW_CONFIG } from "../constants";
 
 export type AppWindow = {
 	isOpen: boolean;
@@ -23,4 +23,14 @@ export type DockApp = {
 	name: string;
 	icon: string;
 	canOpen: boolean;
+};
+
+export type LocationKey = keyof typeof locations;
+
+export type Location = (typeof locations)[LocationKey];
+
+export type LocationStore = {
+	activeLocation: Location;
+	setActiveLocation: (location: Location) => void;
+	resetActiveLocation: () => void;
 };
