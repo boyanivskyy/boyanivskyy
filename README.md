@@ -2,24 +2,14 @@
 
 ## Tech Stack
 
--   React
--   Angular
--   TypeScript
--   Tailwind CSS
+-   TypeScript/Golang
+-   React/Next.js
+-   Angular/RxJS/Signals/Angular Material/NgRx
 -   NodeJS/NestJS
--   MongoDB
+-   Tailwind CSS
 -   PostgreSQL
--   Redis
--   RabbitMQ
+-   Redis/memcached
 -   Kafka
--   GSAP
--   Rust
--   Golang
-
-## Projects
-
--   [Portfolio](https://github.com/your-username/portfolio)
--   [Portfolio](https://github.com/your-username/portfolio)
 
 ## Contact
 
